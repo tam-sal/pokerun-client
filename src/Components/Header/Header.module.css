@@ -1,0 +1,75 @@
+.mainHeader {
+  width: 100vw;
+  height: 8rem;
+  background: rgba(1, 22, 63, 0.95);
+  position: fixed;
+  top: 0;
+  z-index: 4;
+}
+
+.leftHeader {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  margin-right: 0;
+  width: 12rem;
+}
+
+/** MOBILE */
+
+@media screen and (max-width : 480px) {
+  .mainHeader {
+    width: 100vw;
+    height: 8.1rem;
+  }
+
+  .leftHeader .logo {
+    width: 7rem;
+  }
+
+  .leftHeader {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 0;
+    width: 6rem;
+  }
+}
+
+/* * Tablets */
+@media screen and (min-width: 481px) and (max-width: 912px) {
+  .mainHeader {
+    width: 100vw;
+    height: 8.1rem;
+  }
+
+  .leftHeader .logo {
+    width: 12rem;
+  }
+
+  .leftHeader {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 0;
+    width: 12rem;
+
+  }
+}
+
+@media screen and (min-width: 913px) and (max-width: 1368px) {
+  .mainHeader {
+    width: 100vw;
+    height: 8.1rem;
+  }
+
+  .leftHeader .logo {
+    width: 12rem;
+  }
+
+  .leftHeader {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 0;
+    width: 12rem;
+
+
+  }
+}

@@ -1,0 +1,33 @@
+footer {
+  z-index: 3;
+  position: fixed;
+  background-color: rgba(8, 33, 78, .8);
+  width: 100%;
+  height: 2.2rem;
+  bottom: 0;
+  color: orange;
+  text-align: center;
+  font-size: 1.1em;
+  padding: 0.2em 1em 0.3em 1em;
+  border-top: 2px solid rgba(255, 166, 0, 0.576);
+  text-justify: center;
+
+
+}
+
+footer a img {
+  padding-top: 2px;
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    font-size: 0.8em;
+
+  }
+
+  footer a img {
+    padding-top: 2px;
+    width: 15px;
+    margin-top: 5px;
+  }
+}

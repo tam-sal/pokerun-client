@@ -1,0 +1,130 @@
+.cardContainer {
+  margin: 2em;
+  padding: 2em;
+  min-width: 20rem;
+  min-height: 37rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(17, 24, 115, 0.37);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  user-select: none;
+}
+
+.name {
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 900;
+  transition: 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.pokeImg {
+  transition: all 0.35s ease-in-out;
+  width: 15em;
+}
+
+.cardContainer:nth-child(odd):hover .pokeImg {
+  filter: drop-shadow(16px 16px 16px rgb(16, 8, 245));
+  transform: translateY(-1rem);
+}
+
+.cardContainer:nth-child(even):hover .pokeImg {
+  filter: drop-shadow(16px 16px 16px rgb(246, 3, 60));
+  transform: translateY(-1rem);
+}
+
+.cardContainer:hover .name {
+  transform: translateY(-1em);
+}
+
+.closeBtn {
+  position: absolute;
+  margin-right: 0.1em;
+  margin-left: 21em;
+  margin-top: -1.8em;
+  border: 2px solid rgba(238, 130, 238, 0.533);
+  width: 1.8em;
+  height: 1.8em;
+  border-radius: 0.5em;
+  color: brown;
+  font-weight: 700;
+  background-color: transparent;
+}
+
+.cardContainer .closeBtn:hover {
+  color: red;
+  background-color: rgba(240, 246, 148, 0.559);
+  cursor: pointer;
+}
+
+
+
+.cardContainer a:link,
+.cardContainer a:visited,
+.cardContainer a:active {
+  color: rgb(249, 135, 28);
+  text-transform: uppercase;
+  text-shadow: -2px 5px 7px rgba(11, 15, 15, 0.8);
+}
+
+.cardContainer a:link:hover,
+.cardContainer a:visited:hover {
+  color: rgb(69, 242, 95);
+  cursor: pointer;
+}
+
+.data {
+  text-shadow: -1px -3px 3px #0722d6;
+  color: greenyellow;
+  font-weight: 600;
+  text-align: center;
+}
+
+.dataName {
+  text-shadow: -1px -3px 3px #0722d6;
+  color: rgb(255, 127, 47);
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/** Mobile */
+
+@media screen and (max-width : 480px) {
+  .cardContainer {
+    margin: 0.5em;
+    padding: 2em;
+    width: 10rem;
+    height: 23rem;
+    box-shadow: 0 8px 32px 0 rgba(17, 24, 115, 0.7);
+
+  }
+}
+
+/* * Tablets */
+@media screen and (min-width: 481px) and (max-width: 912px) {
+  .cardContainer {
+    margin: 0.5em;
+    padding: 2em;
+    width: 10rem;
+    height: 23rem;
+    box-shadow: 0 8px 32px 0 rgba(17, 24, 115, 0.7);
+
+  }
+}
+
+@media screen and (min-width: 913px) and (max-width: 1368px) {
+  .cardContainer {
+    margin: 0.5em;
+    padding: 2em;
+    width: 12rem;
+    height: 25rem;
+    box-shadow: 0 8px 32px 0 rgba(17, 24, 115, 0.7);
+
+  }
+}

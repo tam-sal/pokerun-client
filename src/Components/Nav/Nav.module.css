@@ -1,0 +1,155 @@
+nav {
+  top: 1.4rem;
+  position: fixed;
+  height: 6rem;
+  z-index: 4;
+  width: 30rem;
+  left: 30rem;
+
+}
+
+.navContainer {
+  display: flex;
+  border: none;
+  padding: 0.5rem;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.navContainer a {
+  font-size: 2em;
+  color: rgb(212, 120, 33);
+  background-color: transparent;
+  padding: 0.2rem;
+  margin-left: 5rem;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.navContainer a:link {
+  text-decoration: none;
+  padding: 0.2rem;
+  width: 6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.navContainer a:hover {
+  cursor: pointer;
+  color: aqua;
+  border-left: 2px solid antiquewhite;
+  border-right: 2px solid antiquewhite;
+  border-radius: 5px;
+}
+
+.navActive {
+  color: aqua;
+  border-left: 2px solid antiquewhite;
+  border-right: 2px solid antiquewhite;
+  border-radius: 5px;
+
+}
+
+/** Mobile */
+@media screen and (max-width : 480px) {
+  nav {
+    top: 0.3rem;
+    position: fixed;
+    height: 3.5rem;
+    z-index: 4;
+    width: 18rem;
+    left: 6rem;
+
+
+  }
+
+  .navContainer a {
+    font-size: 1em;
+    color: rgb(212, 120, 33);
+    background-color: transparent;
+    padding: 0.2rem;
+    margin-left: 1rem;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+
+  }
+
+  .navContainer a:link {
+    text-decoration: none;
+    padding: 0.2rem;
+    width: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+  }
+}
+
+/* * Tablets */
+@media screen and (min-width: 481px) and (max-width: 912px) {
+  nav {
+    top: 1.5rem;
+    position: fixed;
+    height: 3rem;
+    z-index: 4;
+    width: 18rem;
+    left: 50%;
+
+  }
+
+  .navContainer a {
+    font-size: 1.5em;
+    color: rgb(212, 120, 33);
+    background-color: transparent;
+    padding: 0.1rem;
+    margin: 0 2em;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+
+  }
+
+  .navContainer a:link {
+    text-decoration: none;
+    padding: 0.5rem;
+    width: 4.5em;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 913px) and (max-width: 1368px) {
+  nav {
+    top: 1.5rem;
+    position: fixed;
+    height: 3rem;
+    z-index: 4;
+    width: 20rem;
+    left: 50%;
+  }
+
+  .navContainer a {
+    font-size: 1.5em;
+    color: rgb(212, 120, 33);
+    background-color: transparent;
+    margin: 0 2.5em;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navContainer a:link {
+    text-decoration: none;
+    padding: 0.5rem;
+    width: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+
+  }
+
+}

@@ -1,0 +1,160 @@
+.mainContainerCards {
+  height: 100vh;
+  padding-top: 1rem;
+  background: rgb(16, 5, 99);
+  background: linear-gradient(90deg, rgb(16, 5, 99) 0%, #20daa5 100%);
+  margin-bottom: 2rem;
+
+}
+
+.cardsContainer {
+  background: rgb(16, 5, 99);
+  background: linear-gradient(90deg, rgb(16, 5, 99) 0%, #20daa5 100%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+.filters select,
+.resetBtn,
+.reloadBtn,
+.clearBtn {
+  width: 12rem;
+  border-radius: 16px;
+  border: none;
+  height: 3rem;
+  background-color: rgba(8, 33, 78);
+  color: rgb(234, 164, 98);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0 0.5em;
+}
+
+
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+
+.filters select>option {
+  text-align: center;
+  background-color: rgb(7, 3, 79);
+  color: rgb(234, 164, 98);
+
+}
+
+.filters select:hover,
+.resetBtn:hover,
+.reloadBtn:hover,
+.clearBtn:hover {
+  cursor: pointer;
+}
+
+.pagMainContainer {
+  background-color: rgba(0, 0, 0, 0.448);
+  width: 32em;
+  text-align: center;
+  margin: -0.8em 45em;
+  border-radius: 15px 15px 0 0;
+  border: 4px solid springgreen;
+  border-bottom: 2px solid springgreen;
+
+
+}
+
+.pagMainContainer>ul {
+  display: flex;
+  margin: 1em;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/** Mobile */
+
+@media screen and (max-width : 480px) {
+  .filters {
+    gap: 1em;
+    flex-direction: column;
+  }
+
+  .pagMainContainer {
+    background-color: rgba(0, 0, 0, 0.448);
+    width: 15em;
+    text-align: center;
+    margin: -0.8em 4.5em;
+    border-radius: 15px 15px 0 0;
+    border: 4px solid springgreen;
+    border-bottom: 2px solid springgreen;
+
+  }
+}
+
+/* * Tablets */
+@media screen and (min-width: 481px) and (max-width: 912px) {
+  .mainContainerCards {
+    height: 135vh;
+    padding-top: 1rem;
+    background: rgb(16, 5, 99);
+    background: linear-gradient(90deg, rgb(16, 5, 99) 0%, #20daa5 100%);
+    margin-bottom: 2rem;
+    padding-bottom: 5rem;
+    overflow-x: hidden;
+
+  }
+
+  .filters {
+    gap: 0.5em;
+    flex-direction: column;
+  }
+
+  .pagMainContainer {
+    background-color: rgba(0, 0, 0, 0.448);
+    width: 22em;
+    text-align: center;
+    margin-left: 30%;
+    border-radius: 15px 15px 0 0;
+    border: 4px solid springgreen;
+    border-bottom: 2px solid springgreen;
+
+  }
+}
+
+@media screen and (min-width: 913px) and (max-width: 1368px) {
+  .filters {
+    gap: 0.5em;
+  }
+
+  .filters select,
+  .resetBtn,
+  .reloadBtn,
+  .clearBtn {
+    width: 10rem;
+    padding: 0.2rem;
+    margin: 0 0.2rem;
+    margin-bottom: 1rem;
+    height: 4rem;
+
+
+
+  }
+
+  .pagMainContainer {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.448);
+    width: 25em;
+    text-align: center;
+    margin-left: 35%;
+    border-radius: 15px 15px 0 0;
+    border: 4px solid springgreen;
+    border-bottom: 2px solid springgreen;
+
+  }
+}

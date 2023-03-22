@@ -1,0 +1,123 @@
+.landing {
+  background-color: rgb(29, 39, 239);
+  background: url('../../assets/bgs/landing_1.jpg') no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  color: transparent;
+  filter: grayscale(100%);
+  position: relative;
+  transition: 1s ease-in-out;
+
+}
+
+.landingTitle {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.entryBtn {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 3px solid rgb(248, 218, 179);
+  cursor: pointer;
+  background-color: transparent;
+  color: antiquewhite;
+}
+
+.mainLanding .entryBtn {
+  margin: 0;
+  position: absolute;
+  top: 85%;
+  right: 50%;
+}
+
+.landing:hover {
+  filter: grayscale(0);
+  opacity: 1;
+  color: #005151;
+  text-shadow: -1px -6px 7px rgba(197, 68, 68, 0.79);
+}
+
+.entryBtn:hover {
+  color: #1cb6b6;
+  font-weight: 700;
+  border: 5px solid #1cb6b6;
+}
+
+/** MOBILE */
+
+@media screen and (max-width : 480px) {
+  .landing {
+    background-color: aqua;
+    background: url('../../assets/bgs/landing_1_v.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .landingTitle {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .landing:hover .entryBtn {
+    color: #1cb6b6;
+    font-weight: 700;
+    border: 5px solid #1cb6b6;
+  }
+
+}
+
+/* * Tablets */
+@media screen and (min-width: 481px) and (max-width: 912px) {
+  .landing {
+    background-color: aqua;
+    background: url('../../assets/bgs/landing_1.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .landingTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  .mainLanding .entryBtn {
+    top: 75%;
+    right: 50%;
+  }
+
+  .landing:hover .entryBtn {
+    color: #1cb6b6;
+    font-weight: 700;
+    border: 5px solid #1cb6b6;
+  }
+}
+
+@media screen and (min-width: 913px) and (max-width: 1368px) {
+  .landing {
+    background-color: aqua;
+    background: url('../../assets/bgs/landing_1.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .mainLanding .entryBtn {
+    top: 75%;
+    right: 50%;
+  }
+
+  .landing:hover .entryBtn {
+    color: #1cb6b6;
+    font-weight: 700;
+    border: 5px solid #1cb6b6;
+  }
+
+}
