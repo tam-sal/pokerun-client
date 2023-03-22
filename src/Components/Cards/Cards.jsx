@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react'
 function Cards() {
   const { pokes } = useSelector(state => state)
   const { types } = useSelector(state => state)
-  const { clickedForName } = useSelector(state => state)
+  let { clickedForName } = useSelector(state => state)
   const dispatch = useDispatch()
   const [currentPage, setCurrentPage] = useState(1)
   let cardsPerPage = 12
@@ -133,10 +133,10 @@ function Cards() {
       </div>}
       <div className={styles.cardsContainer}>
 
-        {!pokes.length && clickedForName ?
-          <div style={{ color: 'rgb(16, 5, 99)' }}>
+        {!pokes.length && clickedForName ? clickedForName = !clickedForName
+          && <div style={{ color: 'rgb(16, 5, 99)' }}>
             <h1>Name not found</h1>
-            <h3>You will be redirected back home in 5 seconds</h3>
+            <h3>You will be redirected back home in 10 seconds</h3>
           </div>
 
           : !pokes.length ? <Loading />

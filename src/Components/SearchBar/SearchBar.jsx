@@ -25,7 +25,7 @@ function SearchBar() {
     setTimeout(() => {
       dispatch(getPokes())
 
-    }, 5000)
+    }, 10000)
   }
 
 
@@ -33,7 +33,7 @@ function SearchBar() {
 
   return (
     <div className={styles.mainSearch}>
-      <input type="text" name='searchname' autoComplete='off' placeholder='search a name' value={searched} onChange={(e) => nameInputHandler(e)} className={styles.searchInput} />
+      <input type="text" title='min characters 4 - max characters 12' name='searchname' autoComplete='off' placeholder='search a name' value={searched} onChange={(e) => nameInputHandler(e)} className={styles.searchInput} />
       <button disabled={searched.length < 4 || searched.length > 12 || !searched} onClick={(e) => handleSearchClick(e)} className={styles.searchBtn}>
         <img src={searchIcon} alt="search icon" className={styles.searchIcon} />
       </button>

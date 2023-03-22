@@ -222,7 +222,8 @@ select:disabled {
     overflow-x: hidden;
     padding-top: 15rem;
     position: relative;
-    /* overflow-y: hidden; */
+
+
   }
 
   .maintitle {
@@ -247,6 +248,8 @@ select:disabled {
     border: none;
     margin-top: 1em;
   }
+
+
 
   form .labelContainer label,
   form .labelContainer input,
@@ -303,6 +306,7 @@ select:disabled {
     background-color: #00749b;
     margin-left: 7rem;
     letter-spacing: 0.2em;
+
   }
 
   .SumbitBtn:disabled {
@@ -321,6 +325,13 @@ select:disabled {
   .SumbitBtn img {
     width: 0.8em;
     height: 0.8em;
+  }
+
+  .filler {
+    height: 2.5rem;
+    background-color: #000000;
+    padding-top: 2rem;
+    border: none;
   }
 
 }
