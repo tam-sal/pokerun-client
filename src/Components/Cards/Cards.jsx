@@ -133,11 +133,12 @@ function Cards() {
       </div>}
       <div className={styles.cardsContainer}>
 
-        {!pokes.length && clickedForName ? clickedForName = !clickedForName
-          && <div style={{ color: 'rgb(16, 5, 99)' }}>
+        {!pokes.length && clickedForName ?
+          <div style={{ color: 'rgb(16, 5, 99)' }}>
             <h1>Name not found</h1>
             <h3>You will be redirected back home in 10 seconds</h3>
           </div>
+
 
           : !pokes.length ? <Loading />
             : currentCards.map((poke) =>
