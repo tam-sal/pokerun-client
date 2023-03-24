@@ -23,7 +23,7 @@ function Details() {
     <>
       <Header />
       <Nav />
-      {loading && <Loader />}
+      {Object.values(pokeDetails).length === 0 && <Loader />}
       {!loading && <div className={styles.detailsContainer}>
         <div className={styles.detailsCard}>
           <Card
