@@ -81,3 +81,31 @@
     transform: scale(0.65) translateX(75%);
   }
 }
+
+@media screen and (max-width : 480px) {
+  .jelly {
+    margin-left: 50%;
+    margin-top: 16em;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 912px) {
+  .jelly {
+    margin-left: 50%;
+    margin-top: 35%;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 913px) and (max-width: 1368px) {
+  .jelly {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0;
+    margin-left: 50%;
+    margin-top: 40%;
+  }
+}
