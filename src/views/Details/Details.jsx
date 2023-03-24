@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from "react-router-dom";
 import { getPokeByID } from "../../Redux/actions/action-creators";
-import { Card, Header, Footer, Nav, Loading } from "../../Components";
+import { Card, Header, Footer, Nav, Loader } from "../../Components";
 import styles from './Details.module.css'
 
 function Details() {
@@ -24,7 +24,7 @@ function Details() {
       <Nav />
       {
 
-        Object.values(pokeDetails).length === 0 ? <Loading />
+        Object.values(pokeDetails).length === 0 ? <Loader />
           : <div className={styles.detailsContainer}>
             <div className={styles.detailsCard}>
               <Card

@@ -6,7 +6,7 @@ import Loading from './Loading/Loading.jsx'
 import Nav from './Nav/Nav.jsx'
 import SearchBar from './SearchBar/SearchBar.jsx'
 import Pagination from './Pagination/Pagination.jsx'
-
+import Loader from './Loader/Loader.jsx'
 
 
 
@@ -19,5 +19,6 @@ export {
   Nav,
   SearchBar,
   Pagination,
+  Loader
 
 }

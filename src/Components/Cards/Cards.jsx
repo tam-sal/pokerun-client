@@ -1,4 +1,4 @@
-import { Card, Loading, Pagination } from '../'
+import { Card, Pagination, Loader } from '../'
 import { useSelector } from 'react-redux'
 import styles from './Cards.module.css'
 import { deletePokeById, getTypes, filterTypes, sortAZ, filterDataSource, sortZA, filterAttack, getPokes, clearAll } from '../../Redux/actions/action-creators'
@@ -140,7 +140,7 @@ function Cards() {
           </div>
 
 
-          : !pokes.length ? <Loading />
+          : !pokes.length ? <Loader />
             : currentCards.map((poke) =>
               <Card
                 key={poke.id}
