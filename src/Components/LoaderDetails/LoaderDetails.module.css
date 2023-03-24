@@ -1,5 +1,10 @@
 .loadingContainer {
-  margin-top: 50rem;
+  margin-top: 50%;
+  margin-left: 35%;
+  width: 50vw;
+  height: 50vh;
+  background-color: teal;
+  border-radius: 15px;
 }
 
 .jelly {
