@@ -124,7 +124,7 @@ function Cards() {
       <br /><br />
 
 
-      {pokes.length && <div className={styles.pagMainContainer}>
+      {pokes.length > 0 && <div className={styles.pagMainContainer}>
         <Pagination
           cardsPerPage={cardsPerPage}
           totalCards={pokes.length}
@@ -133,14 +133,14 @@ function Cards() {
       </div>}
       <div className={styles.cardsContainer}>
 
-        {!pokes.length && clickedForName ?
+        {pokes.length === 0 && clickedForName ?
           <div style={{ color: 'rgb(16, 5, 99)' }}>
             <h1>Name not found</h1>
             <h3>You will be redirected back home in 10 seconds</h3>
           </div>
 
 
-          : !pokes.length ? <Loader />
+          : pokes.length === 0 ? <Loader />
             : currentCards.map((poke) =>
               <Card
                 key={poke.id}
