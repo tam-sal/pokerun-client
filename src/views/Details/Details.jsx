@@ -23,27 +23,25 @@ function Details() {
     <>
       <Header />
       <Nav />
-      {
+      {loading && <Loader />}
+      {!loading && <div className={styles.detailsContainer}>
+        <div className={styles.detailsCard}>
+          <Card
+            id={pokeDetails.id}
+            img={pokeDetails.img}
+            name={pokeDetails.name}
+            hp={pokeDetails.hp}
+            attack={pokeDetails.attack}
+            defense={pokeDetails.defense}
+            speed={pokeDetails.speed}
+            height={pokeDetails.height}
+            weight={pokeDetails.weight}
+            Types={pokeDetails.Types}
+            home={false}
 
-        loading ? <Loader />
-          : <div className={styles.detailsContainer}>
-            <div className={styles.detailsCard}>
-              <Card
-                id={pokeDetails.id}
-                img={pokeDetails.img}
-                name={pokeDetails.name}
-                hp={pokeDetails.hp}
-                attack={pokeDetails.attack}
-                defense={pokeDetails.defense}
-                speed={pokeDetails.speed}
-                height={pokeDetails.height}
-                weight={pokeDetails.weight}
-                Types={pokeDetails.Types}
-                home={false}
-
-              />
-            </div>
-          </div>
+          />
+        </div>
+      </div>
       }
       <Footer />
     </>
