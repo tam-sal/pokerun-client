@@ -40,7 +40,7 @@ const getPokeByID = (id, setLoading) => {
         type: GET_POKE_BY_ID,
         payload: pokeByID
       })
-      setLoading(false)
+      await setLoading(false)
     }
     catch (error) {
       return error.message
