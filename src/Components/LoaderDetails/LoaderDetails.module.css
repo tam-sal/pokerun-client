@@ -7,14 +7,14 @@
 .jelly {
   --uib-size: 50px;
   --uib-speed: .7s;
-  --uib-color: rgb(68, 244, 115);
+  --uib-color: rgb(4, 7, 60);
 
   position: relative;
   height: calc(var(--uib-size) / 2);
   width: var(--uib-size);
   filter: url('#uib_jelly_ooze');
   animation: rotate calc(var(--uib-speed) * 2) linear infinite;
-  margin: 10rem 47rem;
+  margin: 10rem 50rem;
 
 }
 
