@@ -9,10 +9,12 @@ function Details() {
   const { id } = useParams()
   const pokeDetails = useSelector(state => state.details)
   const dispatch = useDispatch()
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-
+    setLoading(true)
     dispatch(getPokeByID(id))
+    setLoading(false)
   },
     [id, dispatch])
 
@@ -24,7 +26,7 @@ function Details() {
       <Nav />
       {
 
-        Object.values(pokeDetails).length === 0 ? <Loader />
+        loading ? <Loader />
           : <div className={styles.detailsContainer}>
             <div className={styles.detailsCard}>
               <Card
