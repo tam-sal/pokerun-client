@@ -14,7 +14,7 @@
   width: var(--uib-size);
   filter: url('#uib_jelly_ooze');
   animation: rotate calc(var(--uib-speed) * 2) linear infinite;
-  margin: center-auto;
+  margin-top: 30%;
 }
 
 .jelly::before,
