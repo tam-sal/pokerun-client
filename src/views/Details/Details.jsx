@@ -16,7 +16,7 @@ function Details() {
     dispatch(getPokeByID(id))
     setLoading(false)
   },
-    [id, dispatch])
+    [id, loading, dispatch])
 
 
 
