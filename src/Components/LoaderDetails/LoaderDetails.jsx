@@ -1,7 +1,7 @@
-import styles from './Loader.module.css'
-const Loader = () => {
+import styles from './LoaderDetails.module.css'
+const LoaderDetails = () => {
   return (
-    <>
+    <div className={styles.loadingContainer}>
       <div className={styles.jelly}></div>
 
       <svg width="0" height="0" className={styles.jelly_maker}>
@@ -22,7 +22,7 @@ const Loader = () => {
           </filter>
         </defs>
       </svg>
-    </>
+    </div>
   )
 }
-export default Loader
+export default LoaderDetails

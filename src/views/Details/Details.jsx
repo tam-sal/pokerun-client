@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from "react-router-dom";
 import { getPokeByID } from "../../Redux/actions/action-creators";
-import { Card, Header, Footer, Nav, Loader } from "../../Components";
+import { Card, Header, Footer, Nav, LoaderDetails } from "../../Components";
 import styles from './Details.module.css'
 
 function Details() {
@@ -23,7 +23,7 @@ function Details() {
     <>
       <Header />
       <Nav />
-      {loading && <Loader />}
+      {loading && <LoaderDetails />}
       {!loading && <div className={styles.detailsContainer}>
         <div className={styles.detailsCard}>
           <Card
