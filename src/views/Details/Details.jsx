@@ -13,10 +13,9 @@ function Details() {
 
   useEffect(() => {
     setLoading(true)
-    dispatch(getPokeByID(id))
-    setLoading(false)
+    dispatch(getPokeByID(id, setLoading))
   },
-    [id, loading, dispatch])
+    [id, dispatch])
 
 
 

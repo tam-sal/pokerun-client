@@ -32,7 +32,7 @@ const getTypes = () => {
   }
 }
 
-const getPokeByID = (id) => {
+const getPokeByID = (id, setLoading) => {
   return async (dispatch) => {
     try {
       const { data: pokeByID } = await axios.get(`https://pokerun-api.onrender.com/pokemons/${id}`)
@@ -40,6 +40,7 @@ const getPokeByID = (id) => {
         type: GET_POKE_BY_ID,
         payload: pokeByID
       })
+      setLoading(false)
     }
     catch (error) {
       return error.message
