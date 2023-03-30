@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css';
 import { Route, Switch } from 'react-router-dom'
-import { Landing, Home, Details, Form, Error } from './views'
+import { Landing, Home, Details, Form, ErrorComponent } from './views'
 
 function App() {
 
@@ -32,7 +32,7 @@ function App() {
 
         {/* Route 5 - Error */}
         <Route path='*'>
-          <Error />
+          <ErrorComponent />
         </Route>
 
 

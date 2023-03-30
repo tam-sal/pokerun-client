@@ -1,8 +1,8 @@
 import { useHistory } from "react-router-dom"
 import { useEffect } from "react";
-import { Footer } from '../../Components/'
+import { Footer } from '../../Components'
 import styles from './Error.module.css'
-function Error() {
+function ErrorComponent() {
   const history = useHistory()
   useEffect(() => {
     setTimeout(() => {
@@ -26,4 +26,4 @@ function Error() {
     </>
   )
 }
-export default Error
+export default ErrorComponent
