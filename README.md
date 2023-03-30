@@ -1,3 +1,6 @@
+[![HTML5](https://img.shields.io/badge/HTML5-valid-orange)](https://validator.w3.org/)
+[![CSS3](https://img.shields.io/badge/CSS3-valid-blue)](https://jigsaw.w3.org/css-validator/)
+[![Responsive Design](https://img.shields.io/badge/Responsive-Design-green)](https://www.w3schools.com/css/css_rwd_intro.asp)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-blue)](https://www.javascript.com/)
 [![React](https://img.shields.io/badge/React-v18.0.0-blue)](https://reactjs.org/)
 [![react-router-dom](https://img.shields.io/badge/react--router--dom-v5.3.0-blue)](https://reactrouter.com/web/guides/quick-start)
@@ -6,7 +9,7 @@
 [![Express](https://img.shields.io/badge/Express-v4.17.1-green)](https://expressjs.com/)
 
 # PokeRun
-### https://pokerun.onrender.com
+[Visit the app!](https://pokerun.onrender.com){:target="_blank"}
 Welcome to PokeRun, a full-stack web application that allows users to browse, search, and filter through a collection of Pokémon cards, view extended details about each Pokémon, and create custom Pokémon using a controlled form.
 
 ## Table of Contents
