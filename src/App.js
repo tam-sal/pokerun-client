@@ -31,7 +31,7 @@ function App() {
         </Route>
 
         {/* Route 5 - Error */}
-        <Route path='/error'>
+        <Route path='/'>
           <ErrorComponent />
         </Route>
 
