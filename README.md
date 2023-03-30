@@ -18,5 +18,4 @@
 - Create your own custom Pokémon using the controlled form
 
 
-![pokerun-img](https://user-images.githubusercontent.com/95254477/228706320-c348d333-894f-4470-b450-5359b24c985c.PNG)
 
