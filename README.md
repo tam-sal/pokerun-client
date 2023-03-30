@@ -9,7 +9,9 @@
 [![Express](https://img.shields.io/badge/Express-v4.17.1-green)](https://expressjs.com/)
 
 # PokeRun
-[Visit the app!](https://pokerun.onrender.com){:target="_blank"}
+
+[Visit the app!](https://pokerun.onrender.com){:target="_blank" rel="noopener"}
+
 Welcome to PokeRun, a full-stack web application that allows users to browse, search, and filter through a collection of Pokémon cards, view extended details about each Pokémon, and create custom Pokémon using a controlled form.
 
 ## Table of Contents
