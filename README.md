@@ -1,4 +1,3 @@
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://html.com/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-blue)](https://www.javascript.com/)
 [![React](https://img.shields.io/badge/React-v18.0.0-blue)](https://reactjs.org/)
 [![react-router-dom](https://img.shields.io/badge/react--router--dom-v5.3.0-blue)](https://reactrouter.com/web/guides/quick-start)
