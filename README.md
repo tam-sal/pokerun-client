@@ -1,5 +1,6 @@
 [![HTML5](https://img.shields.io/badge/HTML5-valid-orange)](https://validator.w3.org/)
 [![CSS3](https://img.shields.io/badge/CSS3-valid-blue)](https://jigsaw.w3.org/css-validator/)
+[![CSS Modules](https://img.shields.io/badge/CSS-Modules-green)](https://github.com/css-modules/css-modules)
 [![Responsive Design](https://img.shields.io/badge/Responsive-Design-green)](https://www.w3schools.com/css/css_rwd_intro.asp)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-blue)](https://www.javascript.com/)
 [![React](https://img.shields.io/badge/React-v18.0.0-blue)](https://reactjs.org/)
