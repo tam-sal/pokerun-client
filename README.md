@@ -10,7 +10,7 @@
 
 # PokeRun
 
-[Visit the app!](https://pokerun.onrender.com){:target="_blank" rel="noopener"}
+<a href="https://pokerun.onrender.com" target="_blank" rel="noopener">Visit the app!</a>
 
 Welcome to PokeRun, a full-stack web application that allows users to browse, search, and filter through a collection of Pokémon cards, view extended details about each Pokémon, and create custom Pokémon using a controlled form.
 
