@@ -1,3 +1,5 @@
+[![MVC Design Pattern](https://img.shields.io/badge/Design%20Pattern-MVC-brightgreen)](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
+[![Backend for Frontend](https://img.shields.io/badge/Architecture-BFF-brightgreen)](https://samnewman.io/patterns/architectural/bff/)
 [![HTML5](https://img.shields.io/badge/HTML5-valid-orange)](https://validator.w3.org/)
 [![CSS3](https://img.shields.io/badge/CSS3-valid-blue)](https://jigsaw.w3.org/css-validator/)
 [![CSS Modules](https://img.shields.io/badge/CSS-Modules-green)](https://github.com/css-modules/css-modules)
