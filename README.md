@@ -10,6 +10,9 @@
 [![Redux](https://img.shields.io/badge/Redux-v4.0.5-purple)](https://redux.js.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-v16.13.0-green)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express-v4.17.1-green)](https://expressjs.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-v15-blue)](https://www.postgresql.org/)
+[![Sequelize](https://img.shields.io/badge/Sequelize-v6.5.1-blue)](https://sequelize.org/)
+
 
 # PokeRun
 
