@@ -1,10 +1,11 @@
 import { GET_POKES, DELETE_POKE, CLEAR, GET_POKE_BY_ID, GET_TYPES, GET_POKE_BY_NAME, SORT_AZ, SORT_ZA, FILTER_TYPES, FILTER_DATA_SOURCE, FILTER_ATTACK } from "./action-types";
 import axios from 'axios'
 
+const baseURL = 'https://pokerun-api-production.up.railway.app/'
 const getPokes = () => {
   return async (dispatch) => {
     try {
-      const { data: pokes } = await axios.get('https://pokerun-api.onrender.com/pokemons/')
+      const { data: pokes } = await axios.get('https://pokerun-api-production.up.railway.app/pokemons/')
       dispatch({
         type: GET_POKES,
         payload: pokes
@@ -19,7 +20,7 @@ const getPokes = () => {
 const getTypes = () => {
   return async (dispatch) => {
     try {
-      const { data: types } = await axios.get('https://pokerun-api.onrender.com/types')
+      const { data: types } = await axios.get('https://pokerun-api-production.up.railway.app/types')
       dispatch({
         type: GET_TYPES,
         payload: types
@@ -35,7 +36,7 @@ const getTypes = () => {
 const getPokeByID = (id, setLoading) => {
   return async (dispatch) => {
     try {
-      const { data: pokeByID } = await axios.get(`https://pokerun-api.onrender.com/pokemons/${id}`)
+      const { data: pokeByID } = await axios.get(`https://pokerun-api-production.up.railway.app/pokemons/${id}`)
       dispatch({
         type: GET_POKE_BY_ID,
         payload: pokeByID
@@ -52,7 +53,7 @@ const getByName = (name) => {
   return async (dispatch) => {
     if (name) {
       try {
-        const { data: searched } = await axios.get(`https://pokerun-api.onrender.com/pokemons?name=${name}`)
+        const { data: searched } = await axios.get(`https://pokerun-api-production.up.railway.app/pokemons?name=${name}`)
         dispatch({
           type: GET_POKE_BY_NAME,
           payload: searched

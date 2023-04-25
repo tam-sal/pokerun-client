@@ -181,7 +181,7 @@ function Form() {
   const submitHandler = async (event) => {
     event.preventDefault()
     try {
-      const { data: response } = await axios.post('https://pokerun-api.onrender.com/pokemons', formState)
+      const { data: response } = await axios.post('https://pokerun-api-production.up.railway.app/pokemons', formState)
       setFormState(initialFormState)
       setSelected([])
       return alert(response.msg)
