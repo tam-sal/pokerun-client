@@ -21,7 +21,7 @@ const getPokes = () => {
 const getTypes = () => {
   return async (dispatch) => {
     try {
-      const { data: types } = await axios.get('https://pokerun-api-production.up.railway.app/types')
+      const { data: types } = await axios.get(`${baseURL}/types`)
       dispatch({
         type: GET_TYPES,
         payload: types
@@ -37,7 +37,7 @@ const getTypes = () => {
 const getPokeByID = (id, setLoading) => {
   return async (dispatch) => {
     try {
-      const { data: pokeByID } = await axios.get(`https://pokerun-api-production.up.railway.app/pokemons/${id}`)
+      const { data: pokeByID } = await axios.get(`${baseURL}/pokemons/${id}`)
       dispatch({
         type: GET_POKE_BY_ID,
         payload: pokeByID
@@ -54,7 +54,7 @@ const getByName = (name) => {
   return async (dispatch) => {
     if (name) {
       try {
-        const { data: searched } = await axios.get(`https://pokerun-api-production.up.railway.app/pokemons?name=${name}`)
+        const { data: searched } = await axios.get(`${baseURL}/pokemons?name=${name}`)
         dispatch({
           type: GET_POKE_BY_NAME,
           payload: searched

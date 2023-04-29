@@ -14,6 +14,7 @@ function Form() {
   const dispatch = useDispatch()
   const types = useSelector(state => state.types)
   let [selected, setSelected] = useState([])
+  const baseURL = process.env.baseURL
 
   const initialFormState = {
     name: '',
@@ -181,7 +182,7 @@ function Form() {
   const submitHandler = async (event) => {
     event.preventDefault()
     try {
-      const { data: response } = await axios.post('https://pokerun-api-production.up.railway.app/pokemons', formState)
+      const { data: response } = await axios.post(`${baseURL}/pokemons`, formState)
       setFormState(initialFormState)
       setSelected([])
       return alert(response.msg)
@@ -202,7 +203,7 @@ function Form() {
       <div className={styles.maintitle}>Create Your Own Pokemon</div>
       <div className={styles.formContainer}>
 
-        <form action="" method='post' onSubmit={submitHandler}>
+        <form onSubmit={submitHandler}>
           {/* Name */}
 
           <div className={`${styles.pokeName} ${styles.labelContainer}`}>
