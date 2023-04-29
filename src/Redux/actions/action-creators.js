@@ -1,7 +1,8 @@
 import { GET_POKES, DELETE_POKE, CLEAR, GET_POKE_BY_ID, GET_TYPES, GET_POKE_BY_NAME, SORT_AZ, SORT_ZA, FILTER_TYPES, FILTER_DATA_SOURCE, FILTER_ATTACK } from "./action-types";
 import axios from 'axios'
 
-const baseURL = process.env.baseURL
+
+const baseURL = process.env.REACT_APP_baseURL
 const getPokes = () => {
   return async (dispatch) => {
     try {

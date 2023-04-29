@@ -14,7 +14,7 @@ function Form() {
   const dispatch = useDispatch()
   const types = useSelector(state => state.types)
   let [selected, setSelected] = useState([])
-  const baseURL = process.env.baseURL
+  const baseURL = process.env.REACT_APP_baseURL
 
   const initialFormState = {
     name: '',
