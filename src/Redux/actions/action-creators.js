@@ -1,11 +1,12 @@
 import { GET_POKES, DELETE_POKE, CLEAR, GET_POKE_BY_ID, GET_TYPES, GET_POKE_BY_NAME, SORT_AZ, SORT_ZA, FILTER_TYPES, FILTER_DATA_SOURCE, FILTER_ATTACK } from "./action-types";
 import axios from 'axios'
 
-const baseURL = 'https://pokerun-api-production.up.railway.app/'
+const baseURL = process.env.baseURL
 const getPokes = () => {
   return async (dispatch) => {
     try {
-      const { data: pokes } = await axios.get('https://pokerun-api-production.up.railway.app/pokemons/')
+      const { data: pokes } = await axios.get(`${baseURL}/pokemons`)
+
       dispatch({
         type: GET_POKES,
         payload: pokes
