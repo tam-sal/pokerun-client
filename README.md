@@ -19,6 +19,7 @@
 <a href="https://pokerun.onrender.com" target="_blank" rel="noopener">Visit PokeRun!</a>
 
 Welcome to PokeRun, a responsive-design full-stack web application that allows users to browse, search, and filter through a collection of Pokémon cards, view extended details about each Pokémon, and create custom Pokémon using a controlled form. PokeRun is a BFF (Back-End for Front-End) Architecture app following the MVC (Model - View - Controller) software design pattern.
+Click <a href="https://github.com/tam-sal/pokerun-api" target="_blank" rel="noopener">here</a> to access backend repository.
 
 ## Table of Contents
 
